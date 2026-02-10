@@ -1,2 +1,2 @@
-/setup https://gist.github.com/elikranefuss-openclaw/0752a399f847b0fe9cedaf10490437ec
-/ssh https://gist.github.com/elikranefuss-openclaw/7b58d4cbffad15cd1b3a59d1a7762601
+/setup https://gist.githubusercontent.com/elikranefuss-openclaw/0752a399f847b0fe9cedaf10490437ec/raw/6110bb399fe5189ab47db5d7b9b81e53d549f644/prep-bot-machine.sh
+/ssh https://gist.githubusercontent.com/elikranefuss-openclaw/7b58d4cbffad15cd1b3a59d1a7762601/raw/7c0b77599609c8eeade8e8730411dea6d3b24aa6/setup-ssh-to-bot.sh
