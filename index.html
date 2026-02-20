@@ -1,11 +1,109 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bots Deploy</title>
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <h1>Deploy</h1>
-    <p>This page lives on Cloudflare Pages.</p>
+    <header>
+      <nav>
+        <a href="/" class="logo">.domain</a>
+        <div class="nav-links">
+          <a href="#quickstart">Quickstart</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="/setup" class="btn btn-sm">Get Started</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Deploy bots<br />in seconds.</h1>
+          <p class="subtitle">
+            One command to provision a machine. One command to connect.
+            Everything else is already handled.
+          </p>
+          <div class="hero-actions">
+            <a href="#quickstart" class="btn btn-primary">Quickstart</a>
+            <a href="/setup" class="btn btn-outline">Download Script</a>
+          </div>
+        </div>
+        <div class="hero-code">
+          <div class="code-window">
+            <div class="code-titlebar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="code-title">terminal</span>
+            </div>
+            <pre><code><span class="prompt">$</span> curl -fsSL bots.deploy/setup | bash
+<span class="output">Provisioning machine...  done
+Installing dependencies... done
+Configuring environment... done</span>
+
+<span class="success">&#10003; Bot machine ready.</span>
+
+<span class="prompt">$</span> curl -fsSL bots.deploy/ssh | bash
+<span class="output">Connecting to bot...</span>
+<span class="success">&#10003; Connected.</span></code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="quickstart" class="quickstart">
+        <h2>Quickstart</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Prepare the machine</h3>
+            <p>Run the setup script to provision and configure your bot machine with all required dependencies.</p>
+            <div class="code-inline">
+              <code>curl -fsSL bots.deploy/setup | bash</code>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Connect via SSH</h3>
+            <p>Establish a secure connection to your newly provisioned bot machine.</p>
+            <div class="code-inline">
+              <code>curl -fsSL bots.deploy/ssh | bash</code>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Deploy</h3>
+            <p>Your machine is ready. Deploy your bot and start running.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="features">
+          <div class="feature">
+            <div class="feature-icon">&#9881;</div>
+            <h3>Automated Setup</h3>
+            <p>The setup script handles machine provisioning, dependency installation, and environment configuration automatically.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">&#128274;</div>
+            <h3>Secure Access</h3>
+            <p>SSH keys are configured automatically. Connect securely without manual key management.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">&#9889;</div>
+            <h3>Fast Deploys</h3>
+            <p>Go from zero to a running bot in seconds. No infrastructure knowledge required.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Bots Deploy</p>
+    </footer>
   </body>
 </html>
